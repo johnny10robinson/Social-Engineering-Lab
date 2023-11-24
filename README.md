@@ -1,5 +1,5 @@
 # Social-Engineering-and-Phishing-Lab
-The intent of this project is to utilize the Social Engineering Toolkit to clone a website login page, send a seemingly legitimate email from that company with hidden links to the false webpage, and then acquire the victim's login credentials.
+The goal of this project is to utilize the Social Engineering Toolkit to clone a website login page, send a seemingly legitimate email from that company with hidden links to the false webpage, and then acquire the victim's login credentials.
 
 # Description
 Disclaimer: More information on this lab can be found on Dr. Bryson Payne's Udemy course, Real World Ethical Hacking: Hands-on Cybersecurity (https://www.udemy.com/course/real-world-ethical-hacking/). I have augmented it in some ways to go deeper into the topic but that is the basis of the lab. Please note that I am by no means an expert in the field, and am open to corrections if any methods could be improved.
