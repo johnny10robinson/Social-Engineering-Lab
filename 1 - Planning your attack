@@ -1,18 +1,21 @@
 A. Choosing your target
 
-Malicious hackers choose their victims based on a number of factors more complicated than this lab allows me to explore. In general, attack is best applied in situations where the victim is a known or likely user of the website to be cloned. Often times, social media could provide enough OSINT to conduct spear phishing attacks on select targets. For this example I have targetted my professor who's email information has been blurred for privacy. We will say he is ABC123@gmail.com. Disclaimer: DO NOT SEND EMAILS TO ANYONE WHO HAS NOT PROVIDED YOU DIRECT APPROVAL.
+Malicious hackers choose their victims based on a number of factors more complicated than this lab allows me to explore. In general, attack is best applied in situations where the victim is a known or likely user of the website to be cloned. Oftentimes, social media could provide enough OSINT to conduct spear phishing attacks on select targets. For this example I have targeted my professor who's email information has been blurred for privacy. We will say he is ABC123@gmail.com. 
+Disclaimer: DO NOT SEND EMAILS TO ANYONE WHO HAS NOT PROVIDED YOU DIRECT APPROVAL.
+
+
 
 B. Choosing a website
 
-Now that we have our victim, we must select a website that they frequent. Fortunately, the SET toolkit offers us a premade Google login page, but lets do something more fancy. Most peopl
+Now that we have our victim, we must select a website that they frequent. Fortunately, the SET toolkit offers us a premade Google login page, but let's do something more fancy. Many people use streaming services like Netflix so let's pull up their login. 
+The Netflix login page has exactly what we are looking for: An entry for both a username and password field. If they had one page for username and a separate webpage for their password, this attack would not work. Choose any website that has a username and password entry on the same page.
 
-C. Choosing a website
-
-
-Choosing a website
+***Defensive Lesson Number 1: It becomes more challenging for hackers who may want to clone your website to steal your customer’s credentials if the sensitive information is only entered one at a time rather than together. 
 
 
 
-    Executing your Attack a. Masking your IP b. Cloning the website c. Crafting the phishing email
+C. Planning your delivery
 
-    Post-Exploitation a. Potential use of credentials
+The final phase of your setup is your attack vector. You must consider the best point of entry for your target. Generally, this is through email. Some spam emails may be easily filtered if they originate from domains other than “gmail.com.” So there is a catch 22 here… you may try to send an email from something appearing to be from Netflix.com. We will avoid that today due to both its complexity, and the possibly increased likelihood of being moved to a spam folder in the victim’s email service. To accomplish this, we have created a fake email called, “netflixcustomer.alert@gmail.com” with the first name Netflix and the last name Support.
+
+***Defensive Lesson Number 2: It is incredibly easy to create convincing email addresses. Almost every company has their own domain for emails. Although any email could potentially be spoofed in various ways anyways, it is always a useful habit to assess the sender of every email.
