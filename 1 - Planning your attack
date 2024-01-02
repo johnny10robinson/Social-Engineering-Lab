@@ -1,0 +1,18 @@
+A. Choosing your target
+
+Malicious hackers choose their victims based on a number of factors more complicated than this lab allows me to explore. In general, attack is best applied in situations where the victim is a known or likely user of the website to be cloned. Often times, social media could provide enough OSINT to conduct spear phishing attacks on select targets. For this example I have targetted my professor who's email information has been blurred for privacy. We will say he is ABC123@gmail.com. Disclaimer: DO NOT SEND EMAILS TO ANYONE WHO HAS NOT PROVIDED YOU DIRECT APPROVAL.
+
+B. Choosing a website
+
+Now that we have our victim, we must select a website that they frequent. Fortunately, the SET toolkit offers us a premade Google login page, but lets do something more fancy. Most peopl
+
+C. Choosing a website
+
+
+Choosing a website
+
+
+
+    Executing your Attack a. Masking your IP b. Cloning the website c. Crafting the phishing email
+
+    Post-Exploitation a. Potential use of credentials
