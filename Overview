@@ -5,18 +5,19 @@ The goal of this project is to utilize the Social Engineering Toolkit to clone a
 Disclaimer: More information on this lab can be found on Dr. Bryson Payne's Udemy course, Real World Ethical Hacking: Hands-on Cybersecurity (https://www.udemy.com/course/real-world-ethical-hacking/). I have augmented it in some ways to go deeper into the topic but that is the basis of the lab. Please note that I am not an expert, and am open to corrections if any methods could be improved.
 
 This lab will guide the reader through the steps to a relatively complex social engineering attack in a simplified manner. It will cover the following steps:
-1) Planning your attack
-     a. Choosing a target
-     b. Choosing a website
-     c. Planning your delivery
 
-2) Executing your Attack
-     a. Masking your IP
-     b. Cloning the website
-     c. Crafting the phishing email
+Part 1: Planning
+1) Choosing a target
+2) Choosing a website
+3) Planning your delivery
 
-3) Post-Exploitation
-     a. Potential use of credentials
+Part 2: Execution
+4) Masking your IP
+5) Cloning the website
+6) Crafting the phishing email
+
+Part 3: Conclusion
+7) Lessons Learned
 
 The purpose of this lab is to inform the reader of how easily an attacker can craft a powerful social engineering attack, identify the key indicators of an attack, and prove to the reader why reusing passwords can be incredibly dangerous.
 
