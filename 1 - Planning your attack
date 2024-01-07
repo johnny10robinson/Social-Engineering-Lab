@@ -1,21 +1,15 @@
-A. Choosing your target
+      1) Choosing a target
 
-Malicious hackers choose their victims based on a number of factors more complicated than this lab allows me to explore. In general, attack is best applied in situations where the victim is a known or likely user of the website to be cloned. Oftentimes, social media could provide enough OSINT to conduct spear phishing attacks on select targets. For this example I have targeted my professor who's email information has been blurred for privacy. We will say he is ABC123@gmail.com. 
-Disclaimer: DO NOT SEND EMAILS TO ANYONE WHO HAS NOT PROVIDED YOU DIRECT APPROVAL.
+Malicious hackers choose their victims based on a number of factors more complicated than this lab allows me to explore. In general, this kind attack is best applied in situations where the victim is a known or likely user of the website to be cloned. Oftentimes, social media and public business information provides enough OSINT to conduct spear phishing and whaling attacks on select targets. As with any social engineering attack, though, success is usually affected by the number of emails you send, due to its low success rate per email sent.
 
+      2) Choosing a website
 
+After choosing the target, the website must be chosen. For this lab, we will use their template for the google login because it is the least problematic. Many websites now have various defenses against having their website cloned. One way they do this is by having separate pages for both username and passwords fields. Although not impossible, having to host two websites to collect credentials is more complicated, and cannot be done by default with the SET (Social Engineering Toolkit).
 
-B. Choosing a website
+***Defensive Lesson #1: It becomes more challenging for hackers who may want to clone your website to steal your customer’s credentials if the sensitive information is entered across separate pages.
 
-Now that we have our victim, we must select a website that they frequent. Fortunately, the SET toolkit offers us a premade Google login page, but let's do something more fancy. Many people use streaming services like Netflix so let's pull up their login. 
-The Netflix login page has exactly what we are looking for: An entry for both a username and password field. If they had one page for username and a separate webpage for their password, this attack would not work. Choose any website that has a username and password entry on the same page.
+      3) Planning the delivery
 
-***Defensive Lesson Number 1: It becomes more challenging for hackers who may want to clone your website to steal your customer’s credentials if the sensitive information is only entered one at a time rather than together. 
+The final phase of planning is choosing the attack vector. Hackers must decide upon the optimal point of entry, which is often email. However, some emails may be filtered into spam if they originate from domains that appear to be from a business. Therefore, there are a couple ways to work around this. First you can spoof an email address and make it appear to be from a legitimate sender. However, even easier than that is to create a gmail account that is legitimate enough. I have created a new gmail account with the first name Support and last name Alerts, and it has the url, “dataprotection.alerts.help@gmail.com.” It isn't perfect, but it will work well against anyone who isn't vigilant about cyber protection.
 
-
-
-C. Planning your delivery
-
-The final phase of your setup is your attack vector. You must consider the best point of entry for your target. Generally, this is through email. Some spam emails may be easily filtered if they originate from domains other than “gmail.com.” So there is a catch 22 here… you may try to send an email from something appearing to be from Netflix.com. We will avoid that today due to both its complexity, and the possibly increased likelihood of being moved to a spam folder in the victim’s email service. To accomplish this, we have created a fake email called, “netflixcustomer.alert@gmail.com” with the first name Netflix and the last name Support.
-
-***Defensive Lesson Number 2: It is incredibly easy to create convincing email addresses. Almost every company has their own domain for emails. Although any email could potentially be spoofed in various ways anyways, it is always a useful habit to assess the sender of every email.
+***Defensive Lesson #2: It is incredibly easy to create convincing email addresses. Almost every company has their own domain for emails, so anything coming from a generic domain should be questioned. Although email addresses can potentially be spoofed, it is always a useful habit to carefully assess the sender of every email.
