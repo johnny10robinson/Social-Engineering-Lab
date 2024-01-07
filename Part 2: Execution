@@ -1,0 +1,22 @@
+      4) Cloning the website 
+
+Click the Kali Linux logo in the top left corner, and scroll down to “13 - Social Engineering.” Move your cursor right, and click on the Social Engineering Toolkit. Enter your root password (default is “kali”) and enter “y” to agree to the terms of service. Now, enter 1 for “Social-Engineering Attacks,” then enter 2 for “Website Attack Vectors,” and finally, enter 3 for “Credential Harvester Attack Method.” Here you may choose to clone any website of your choosing, or you can use a template for java, google, or twitter. We will use the google template. To do so, enter 1 for “Web Templates,” then enter the IP shown in the brackets, which is your kali system's IP, and finally press 2 to run it. If it worked, you will see:
+
+[*] Cloning the website: http://www.google.com                                                                      
+[*] This could take a little bit...                                                                                 
+The best way to use this attack is if username and password form fields are available. Regardless, this captures all POSTs on a website.                                                                                                
+[*] The Social-Engineer Toolkit Credential Harvester Attack
+[*] Credential Harvester is running on port 80                                                                      
+[*] Information will be displayed to you as it arrives below:                                                       
+
+      5) Crafting the phishing email
+
+Hackers use a multitude of methods to create phishing emails. One of the easiest ways is to copy and paste a legitimate company email and change out the links to redirect victims to the cloned site. Here’s a fun way to do that: if you’ve already created your fake gmail account, perhaps you’ve linked a recovery email to it, as I have. When I did so, I received an email from Google called, “Someone added you as their recovery email.” It offers a link to disconnect from the account at the bottom. Copy the entire email by highlighting the body, and paste it into your own email draft. From here you only need to change the email addresses mentioned, and replace the links. At the top, change the email with your victim email address. If you want to send this to a large number of people, you can write a program to create a unique email for every recipient, or just change it to “you,” since that is the subject of the email anyways. 
+
+***Defensive Lesson #3: Not all phishing emails have typos and ask for money from a Nigerian prince. Our phishing email’s subject and body is completely indistinguishable from a legitimate google email.
+
+      6) Changing Links and Masking your IP Address
+
+This is my favorite part of this lab because it is shockingly simple, yet increases concealment significantly. Using the IP address you entered earlier (if you've forgotten it, go back to your terminal and scroll up to where it was), and go to a website like https://dnschecker.org/ip-to-decimal.php. Enter your IP address and press convert. Scroll down to find your converted decimal IP. My IP of 10.0.2.15 turns into 167772687. This is the number we will use to obfuscate the link we redirect the victim to. Using the “@” simply will cause anything after the symbol to be used as the actual link, while whatever is used before it to be counted as user information (which in this case has no effect). Therefore, we can now write http://www.google.com@167772687 and it will only read the decimal IP at the end. When clicked, this decimal is then converted to the IPv4 Address that loads our cloned site. Now, we simply click on every hyperlink on our email draft and change them out with the format above. Finally, test the link, enter fake credentials yourself to ensure your site loads, and you can receive all POSTS to the site, and sit back, and watch the credentials flow in.
+
+***Defensive Lesson #4: Just because it doesn’t look like an IP Address doesn’t mean it isn’t one. Be wary of any string of integers as a may be the decimal of an IP.
